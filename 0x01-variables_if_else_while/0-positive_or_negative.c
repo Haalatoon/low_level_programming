@@ -5,7 +5,7 @@
 
 /**
  * main - print if the number n is positive, negative or zero
- * @n: The number to evaluate
+ * @n: parameter to evaluate
  *
  * Return: Always 0 (Success)
  */

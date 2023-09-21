@@ -4,8 +4,7 @@
 /* more headers goes there */
 
 /**
- * main - print if the number n is positive, negative or zero
- * @n: parameter to evaluate
+ * main - print if a number is positive, negative or zero
  *
  * Return: Always 0 (Success)
  */

@@ -1,5 +1,4 @@
 #include "main.h"
-#include <limits.h>
 /**
  * print_last_digit - prints the last digit of a number
  * @n: the number to ue
@@ -9,23 +8,17 @@
 
 int print_last_digit(int n)
 {
-	int m;
+	int a;
 
-	if (n == INT_MIN)
-	{
-		m = -n;
-		_putchar(48 + m % 10);
-		return (m % 10);
-	}
-	if (n >= 0)
-	{
-		_putchar(48 + n % 10);
-		return (n % 10);
-	}
-	else
-	{
-		m = -n;
-		_putchar(48 + m % 10);
-		return (m % 10);
-	}
+	if (n < 0)
+	n = -n;
+
+	a = n % 10;
+
+	if (a < 0)
+		a = -a;
+
+	_putchar(a + '0');
+
+	return (a);
 }

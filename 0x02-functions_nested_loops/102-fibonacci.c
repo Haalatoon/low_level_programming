@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int i, a, b, sum;
+	long int i, a, b, sum;
 
 	sum = 0;
 	a = 0;
@@ -15,7 +15,7 @@ int main(void)
 	i = 0;
 	do {
 		sum = a + b;
-		printf("%d", sum);
+		printf("%ld", sum);
 		a = b;
 		b = sum;
 		if (i < 49)

@@ -17,8 +17,11 @@ int main(void)
 		sum = a + b;
 		a = b;
 		b = sum;
-		S += sum;
-	} while (sum < 4000000);
+		if (sum % 2 == 0)
+		{
+			S += sum;
+		}
+	} while (S < 4000000);
 	printf("%ld\n", S);
 	return (0);
 }

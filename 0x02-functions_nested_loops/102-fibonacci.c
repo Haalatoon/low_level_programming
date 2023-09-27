@@ -16,11 +16,11 @@ int main(void)
 		printf("%d", sum);
 		if (i < 49)
 		{
-			printf(',');
+			printf(",");
 		}
 		i++;
-	} while (i < 50)
-	printf('\n');
+	} while (i < 50);
+	printf("\n");
 	return (0);
 }
 

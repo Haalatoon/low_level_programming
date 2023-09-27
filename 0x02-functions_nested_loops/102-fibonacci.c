@@ -12,7 +12,7 @@ int main(void)
 	sum = 1;
 	i = 0;
 	do {
-		sum += i;
+		sum += sum;
 		printf("%d", sum);
 		if (i < 49)
 		{

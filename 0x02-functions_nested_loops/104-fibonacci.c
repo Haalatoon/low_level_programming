@@ -15,7 +15,7 @@ int main(void)
 	i = 1;
 	do {
 		sum = a + b;
-		printf("%ld", sum);
+		printf("%lu", sum);
 		if (i < 98)
 		{
 			printf(", ");

@@ -10,22 +10,27 @@ void puts_half(char *str)
 
 	n = 0;
 	while (str[n] != '\0')
-		n++;
-	if (str[0] == '\0')
-		_putchar('\n');
-	else if (n % 2 == 0)
 	{
-		for (i = n / 2; i < n; i++)
-		{
-			_putchar(str[i]);
-		}
+		n++;
 	}
-	else
+	if (n == 0)
+	{
+		_putchar('\n');
+	}
+	else if ((n - 1) % 2 == 0)
 	{
 		for (i = (n - 1) / 2; i < n; i++)
 		{
 			_putchar(str[i]);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else
+	{
+		for (i = (n - 2) / 2; i < n; i++)
+		{
+			_putchar(str[i]);
+		}
+		_putchar('\n');
+	}
 }
